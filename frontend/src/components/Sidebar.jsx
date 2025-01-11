@@ -45,6 +45,29 @@ const Sidebar = () => {
         </div>
       </div>
 
+      <div
+        className="
+        w-full p-3 flex items-center gap-3
+        hover:bg-base-300 transition-colors"
+        style={{ cursor: "pointer" }}
+      >
+        <div className="relative mx-auto lg:mx-0">
+          <img
+            src={"/yousuf.png"}
+            className="size-12 object-cover rounded-full bg-base-300 ring-1 ring-base-300"
+          />
+        </div>
+        <p>Mohammed Yousuf</p>
+        <img
+          src={"/verified.png"}
+          alt=""
+          width={"19px"}
+          height={"20px"}
+          className="ml:-10px "
+          style={{ marginLeft: "-8px" }}
+        />
+      </div>
+
       <div className="overflow-y-auto w-full py-3">
         {filteredUsers.map((user) => (
           <button
